@@ -1,0 +1,26 @@
+/* Banner */
+			.banner > article {
+			-moz-transition: opacity 1.5s ease, visibility 1.5s;
+			-webkit-transition: opacity 1.5s ease, visibility 1.5s;
+			-ms-transition: opacity 1.5s ease, visibility 1.5s;
+			transition: opacity 1.5s ease, visibility 1.5s;
+			height: 600PX;
+			left: 360PX;
+			width: 100%;
+			opacity: 0;
+			position: absolute;
+		}
+			.banner > article.visible {
+				opacity: 1;
+				visibility: visible;
+			}
+
+		
+
+		
+
+		
+
+		
+
+	
