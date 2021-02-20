@@ -88,10 +88,10 @@ $info=mysqli_fetch_array($sql);
 				</div>
 				<div class="leftSide-course">
 					<div class="option">
-						<button>
+						<button onclick="convert1()">
 							视频
 						</button>
-						<button>
+						<button onclick="convert2()">
 							章节测验
 						</button>
 						<div class="line">
@@ -112,6 +112,40 @@ $info=mysqli_fetch_array($sql);
 						<video controls>
 						  <source src="video/<?php echo $info["lesson_name"]; ?>/<?php echo $num?>.mp4" type="../video/java/mp4">
 						</video>
+					</div>
+					<div class="test" style="height: 600px; width: 60%; position: absolute;top: 61%; left: 10%; display:none;">
+						<div class="test-content" style="height: 100%; width: 100%; background: url(../log/img/background.png); position: inherit; overflow-y: scroll; padding-left: 30px; color: #FFFFFF;">
+							<h2>课后小测试</h2>
+							
+							<h3>1 你在哪家火锅店吃火锅最尴尬</h3>
+							<input type="radio" name="option" value="a">A.不挂科老火锅<br>
+							<input type="radio" name="option" value="b">B.不单身老火锅<br>
+							<input type="radio" name="option" value="c">C.海底捞火锅<br>
+							<input type="radio" name="option" value="d">D.重庆老水产火锅<br>
+							
+							<h3>1 你在哪家火锅店吃火锅最尴尬</h3>
+							<input type="radio" name="option" value="a">A.不挂科老火锅<br>
+							<input type="radio" name="option" value="b">B.不单身老火锅<br>
+							<input type="radio" name="option" value="c">C.海底捞火锅<br>
+							<input type="radio" name="option" value="d">D.重庆老水产火锅<br>
+							
+							<h3>1 你在哪家火锅店吃火锅最尴尬</h3>
+							<input type="radio" name="option" value="a">A.不挂科老火锅<br>
+							<input type="radio" name="option" value="b">B.不单身老火锅<br>
+							<input type="radio" name="option" value="c">C.海底捞火锅<br>
+							<input type="radio" name="option" value="d">D.重庆老水产火锅<br>
+							
+							<h3>1 你在哪家火锅店吃火锅最尴尬</h3>
+							<input type="radio" name="option" value="a">A.不挂科老火锅<br>
+							<input type="radio" name="option" value="b">B.不单身老火锅<br>
+							<input type="radio" name="option" value="c">C.海底捞火锅<br>
+							<input type="radio" name="option" value="d">D.重庆老水产火锅<br>
+							
+							<button style="height: 30px; width: 60px; border-radius: 0px 0px 0px 0px; background-color: orange; color: #FFFFFF; border: none; font-size: 15px;">
+								提交
+							</button>
+							
+						</div>
 					</div>
 				</div>
 				<div class="leftSide-foot">
@@ -147,3 +181,17 @@ $info=mysqli_fetch_array($sql);
 		</div>
 	</body>
 </html>
+<script type="text/javascript">
+	
+	function convert2(){
+		$('.test').css("display",'block');
+		$('.video').css("display",'none');
+		
+	}
+	function convert1() {
+		$('video').css("display",'block');
+		$('.test').css("display",'none');
+		
+	}
+	
+</script>
