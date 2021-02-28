@@ -10,3 +10,5 @@
 3.课程暂由管理员上传，用户不得自行上传私人课程
 
 4.学生学习每节课程均有五道课后测试供温习课程
+
+![image](https://github.com/shinyman47/weike.com/blob/master/image/show1.png)
