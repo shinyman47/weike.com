@@ -12,3 +12,5 @@
 4.学生学习每节课程均有五道课后测试供温习课程
 
 ![image](https://github.com/shinyman47/weike.com/blob/master/image/show1.png)
+
+![image](https://github.com/shinyman47/weike.com/blob/master/image/show2.png)
