@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>修改用户</title>
+		
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+	</head>
+	<body>
+		<div class="main">
+			<div class="head">
+				<h1>修改用户</h1>
+			</div>
+			<div class="listwarp">
+				
+				<div class="list">
+					<table border="1" cellpadding="15" style="background-color: #f1f1f1; font-size: 20px;">
+					    <tr>
+					        <th>修改用户</th>
+					   
+					    </tr>
+					    
+					    <tr>
+					        <td>用户名</td>
+					        <td style="width: 300px;">
+					        	<input type="text"  value="" style="height: 30px; width: 350px;"/>
+					        </td>
+					    </tr>
+						<tr>
+						    <td>用户密码</td>
+						    <td style="width: 300px;">
+						    	<input type="text"  value="" style="height: 30px; width: 350px;"/>
+						    </td>
+						</tr>
+						<tr>
+						    <td>用户qq号</td>
+						    <td style="width: 300px;">
+						    	<input type="text" value="" style="height: 30px; width: 350px;"/>
+						    </td>
+						</tr>
+						<tr>
+						    <td>用户头像</td>
+						    <td style="width: 300px;">
+						    	<input type="file" id="imageInput" value="选择图片" style="height: 30px; width: 350px;"/>
+						    </td>
+						</tr>
+						<tr>
+						    <td>用户密保问题</td>
+						    <td style="width: 300px;">
+						    	<input list="option" type="text" value="" style="height: 30px; width: 350px;"/>
+								<datalist id="option">
+								  <option value="我的母亲名字">
+								  <option value="我的父亲名字">
+								  <option value="我的生日">
+								  <option value="我吃火锅最尴尬的一件事">
+								  <option value="我出生的城市">
+								</datalist>
+						    </td>
+						</tr>
+						<tr>
+						    <td>用户密保答案</td>
+						    <td style="width: 300px;">
+						    	<input type="text" value="" style="height: 30px; width: 350px;"/>
+						    </td>
+						</tr>
+						<tr>
+						    <td>是否会员</td>
+						    <td style="width: 300px;">
+								<input type="radio" name="sex" value="male">是<br>
+								<input type="radio" name="sex" value="female">否
+							</td>
+						</tr>
+						
+					</table>
+				</div>
+			</div>
+			<div class="btnwarp">
+				<div class="btn">
+					<button>
+						提交
+					</button>
+					<button>
+						返回
+					</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script>
+	var imageInput = document.querySelector('#imageInput');
+	
+	    imageInput.onchange = function () {
+	        var file = this.files[0];
+	        if (!/image\/\w+/.test(file.type)) {/*可以把autio改成其他文件类型 比如 image*/
+	              alert("只能选择图片文件")
+	            return false;
+	        }
+	        console.log(file.type)/*文件类型*/
+	        var reader = new FileReader();
+	        reader.readAsDataURL(file);
+	        reader.onload = function () {
+	             var audioBlob=convertBase64UrlToBlob(reader.result,file.type)
+	            /*request("audio",audioBlob)这里是我的ajax请求*/
+	        };
+	    };
+	    
+	     function convertBase64UrlToBlob(urlData,type){   /*转成二进制对象*/
+	    var bytes=window.atob(urlData.split(',')[1]);      
+	    var ab = new ArrayBuffer(bytes.length);  
+	    var ia = new Uint8Array(ab);  
+	    for (var i = 0; i < bytes.length; i++) {  
+	        ia[i] = bytes.charCodeAt(i);  
+	    }  
+	    return new Blob( [ab] , {type : type});  
+	    
+	} 
+	function request(type,Blob){
+	 var formData = new FormData();/*创建formData对象*/
+	
+	   formData.append("cover_img", Blob);
+	    $.ajax({
+	            url:"文件上传地址",
+	            type:"POST",
+	            processData: false,
+	            contentType: false,
+	            data: formData,
+	            dataType: 'json',
+	            success: function (data) {
+	
+	                  }
+	
+	})
+	
+	}
+</script>
