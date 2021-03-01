@@ -1,0 +1,385 @@
+/*order.html*/
+.order-search-warp .submit{
+	margin: 10px;
+	width: 100px;
+	height: 40px;
+	border-radius: 0 0px 0px 0;
+	background-color: #ff5500;
+	color: #ffffff;
+	font-size: 10px;
+	opacity:1;
+	border: none;
+}
+.order-search-warp .content{
+	width: 200px;
+	height: 40px;
+	border-radius:0px 0 0px 0px;
+	background-color: #eaeaea;
+	color: #000000;
+	font-size: 10px;
+	opacity: 0.7;
+	border: none;
+}
+
+
+/*user.html*/
+.cover{
+	 width:100%;
+	 height:900px;
+	 position:absolute;
+	 top:0;
+	 left:0;
+	 z-index: 1;
+	 background-color:#000000;
+	 opacity:0.3;
+}
+
+.addUser{
+	background-color: #ffffff;
+	height: 60px;
+	width: 800px;
+	padding-top: 40px;
+}
+.addUser button{
+	color: #ffffff;
+	background-color: #ff5500;
+	border: none;
+	margin: 0 auto;
+	height: 50px;
+	width: 100px;
+}
+.searchUser{
+	background-color: #ffffff;
+	height: 70px;
+	width: 700px;
+	padding-top: 40px;
+}
+.searchUser button{
+	color: #ffffff;
+	background-color: #ff5500;
+	border: none;
+	margin: 0 auto;
+	height: 50px;
+	width: 100px;
+}
+/* 设置搜索 */
+.search-warp{
+	padding-right: 220px;
+	width: 300px;
+	height: 60px;
+}
+.search{
+	width: 400px;
+	height: 60px;
+}
+.search input{
+	border: 0;
+	outline: none;
+}
+.search .content{
+	width: 200px;
+	height: 40px;
+	border-radius:0px 0 0px 0px;
+	background-color: #eaeaea;
+	color: #000000;
+	font-size: 10px;
+	opacity: 0.7;
+}
+.search .submit{
+	margin: 10px;
+	width: 100px;
+	height: 40px;
+	border-radius: 0 0px 0px 0;
+	background-color: #ff5500;
+	color: #ffffff;
+	font-size: 10px;
+	opacity:1;
+}
+/*用户列表*/
+.list-warp{
+	margin: 0 auto;
+	width: 90%;
+	height: 600px;
+	background-color: #ffffff;
+	position: absolute;
+}
+.list{
+	position: inherit;
+	
+	width: 100%;
+	height: 500px;
+	background-color: #ececec;
+}
+.list button{
+	color: #ffffff;
+	background-color: #ff5500;
+	border: none;
+	margin: 0 auto;
+	height: 50px;
+	width: 100px;
+}
+/*增加用户表单*/
+.user-form-wrap{
+	position: absolute;
+	z-index: 2;
+	background-color: #ffffff;
+	left: 37%;
+	top: 150px;
+	border-radius: 30px;
+	padding:15px;
+	height: 200px;
+	/* border: 1px solid black; */
+}
+.register-form{
+	width: 250px;
+	height: 360px;
+	margin: 0 auto;
+	padding: 20px;
+}
+.register-form input{
+	width: 100%;
+	height: 50px;
+	border-radius: 20px;
+	border: 0;
+	outline: none;
+	background-color: #e6e6e6;
+	color: #000000;
+	margin-top: 20px;
+	text-align: center;
+}
+.register-form .sub{
+	background-color: #ff1f2e;
+	color: #FFFFFF;
+}
+.register-form .sub:hover{
+	background-color: #D51A24;
+}
+.register-form .del1{
+	font-size: 32px;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	border: 0;
+	outline: none;
+	background-color: #FFFFFF;
+	color: #A6A6A6;
+}
+.register-form .del1:hover{
+	color: #D51A24;
+}
+
+
+/*course.html*/
+.cover{
+	 width:100%;
+	 height:900px;
+	 position:absolute;
+	 top:0;
+	 left:0;
+	 z-index: 1;
+	 background-color:#000000;
+	 opacity:0.3;
+}
+
+.addCourse{
+	background-color: #ffffff;
+	height: 60px;
+	width: 800px;
+	padding-top: 40px;
+}
+.addCourse button{
+	color: #ffffff;
+	background-color: #ff5500;
+	border: none;
+	margin: 0 auto;
+	height: 50px;
+	width: 100px;
+}
+.searchCourse{
+	background-color: #ffffff;
+	height: 70px;
+	width: 700px;
+	padding-top: 40px;
+}
+.searchCourse button{
+	color: #ffffff;
+	background-color: #ff5500;
+	border: none;
+	margin: 0 auto;
+	height: 50px;
+	width: 100px;
+}
+/* 设置搜索 */
+.search-warp{
+	padding-right: 220px;
+	width: 300px;
+	height: 60px;
+}
+.search{
+	width: 400px;
+	height: 60px;
+}
+.search input{
+	border: 0;
+	outline: none;
+}
+.search .content{
+	width: 200px;
+	height: 40px;
+	border-radius:0px 0 0px 0px;
+	background-color: #eaeaea;
+	color: #000000;
+	font-size: 10px;
+	opacity: 0.7;
+}
+.search .submit{
+	margin: 10px;
+	width: 100px;
+	height: 40px;
+	border-radius: 0 0px 0px 0;
+	background-color: #ff5500;
+	color: #ffffff;
+	font-size: 10px;
+	opacity:1;
+}
+/*用户列表*/
+.list-warp{
+	margin: 0 auto;
+	width: 90%;
+	height: 600px;
+	background-color: #ffffff;
+}
+.list{
+	width: 100%;
+	height: 500px;
+	background-color: #ececec;
+}
+.list button{
+	color: #ffffff;
+	background-color: #ff5500;
+	border: none;
+	margin: 0 auto;
+	height: 50px;
+	width: 100px;
+}
+/*增加用户表单*/
+.list-commit{
+	width: 100%;
+	height: 700px;
+	background-color: #e6e6e6;
+}
+
+.course-form-wrap{
+	position: absolute;
+	z-index: 2;
+	background-color: #fff;
+	left: 33%;
+	top: 10px;
+	border-radius: 30px;
+	padding:15px;
+	height: 200px;
+	/* border: 1px solid black; */
+}
+.register-form{
+	
+	width: 500px;
+	height: 200px;
+	margin: 0 auto;
+	padding: 20px;
+}
+.register-form input{
+	width: 100%;
+	height: 50px;
+	border-radius: 20px;
+	border: 0;
+	outline: none;
+	background-color: #e6e6e6;
+	color: #000000;
+	margin-top: 20px;
+	text-align: center;
+}
+.register-form .sub{
+	background-color: #ff1f2e;
+	color: #FFFFFF;
+}
+.register-form .sub:hover{
+	background-color: #D51A24;
+}
+.register-form .del1{
+	font-size: 32px;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	border: 0;
+	outline: none;
+	background-color: #FFFFFF;
+	color: #A6A6A6;
+}
+.register-form .del1:hover{
+	color: #D51A24;
+}
+
+/*添加用户表单*/
+.main{
+	position: absolute;
+	left: 15%;
+	
+	text-align: center;
+	height: 100%;
+	width: 70%;
+}
+.head{
+	text-align: center;
+}
+.list-warp{
+	background-color: #eaeaea;
+	width: 100%;
+	height: 800px;
+	position: absolute;
+}
+.list-warp-head{
+	position: inherit;
+}
+.list-warp-head button{
+	height: 50px;
+	width: 100px;
+	border: none;
+	color: #000000;
+	background-color: #a3a3a3;
+}
+.list-main{
+	position: inherit;
+	top: 100px;
+	left: 300px;
+}
+.list-video{
+	position: inherit;
+	top: 100px;
+	left: 300px;
+}
+.list-test{
+	position: inherit;
+	top: 60px;
+	left: 80px;
+	
+}
+.list{
+	background-color: #ffffff;
+	padding-left: 00px;
+}
+.btnwarp{
+	position: inherit;
+	top: 800px;
+	
+	height: 100px;
+	width: 100%;
+}
+.btnwarp button{
+	margin: 20px;
+	width: 120px;
+	height: 50px;
+	
+}
+
+
+
