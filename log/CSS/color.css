@@ -1,0 +1,38 @@
+.main_body {overflow:hidden;}
+.login_body {background: url("../img/background.png") no-repeat; background-size: 100%; background-attachment:fixed; overflow:hidden;}
+.register_body {background: url("../img/registerback.png") no-repeat; background-size: 100%; background-attachment:fixed; overflow:hidden;}
+.course_body {background: url("../img/1543934024333.png") no-repeat;}
+.personal_body {background: url("../img/1543934024333.png") no-repeat;}
+.root_body {background: url("../img/root.png") no-repeat;}
+.img_shadow img{border-radius: 10px;box-shadow: 10px 10px 5px #888888;}
+.shadow {border-radius: 10px;box-shadow: 10px 10px 5px #888888;}
+.round-size{width:auto;height:auto; text-align: center;margin: 0 auto;}
+.login_register_table {width: 500px;
+    height:100px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;}
+
+
+
+.message_table {width: 500px;
+    height:100px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;}
+
+.inputcss {
+    font-size: 9pt;
+    color: #003399;
+    font-family: "宋体";
+    font-style: normal;
+    border-color: #93BEE2 #93BEE2 #93BEE2 #93BEE2 ;
+    border: 1px #93BEE2 solid;
+}
+
